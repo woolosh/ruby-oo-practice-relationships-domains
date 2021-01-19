@@ -5,3 +5,10 @@ def reload
 end
 
 Pry.start
+
+
+
+joshua = Guest.new("Joshua") 
+jacob = Guest.new("Jacob")
+zed = Guest.new("Zed")
+binding.pry
