@@ -35,8 +35,8 @@ Create the necessary methods to connect these classes.
   - should return the bakery object for the dessert
 - #calories
   - should return a number totaling all the calories for all the ingredients included in that dessert
-- .all
-  - should return an array of all desserts
+<!-- - .all
+  - should return an array of all desserts -->
 
 #### Ingredients
 

@@ -5,9 +5,11 @@ def reload
   load 'config/environment.rb'
 end
 
-user1 = User.new("Zed", "Parks and Rec", "100")
-user2 = User.new("Joshua", "Diapers for Babies", "200")
-user3 = User.new("Carlos", "Hello Diapers", "300")
+
+jello = Dessert.new("Jello")
+pound_cake = Dessert.new("Pound Cake")
+dump_cake = Dessert.new("Dump Cake")
+chocolate_pudding = Dessert.new("Chocolate PuddingD")
 binding.pry
 
 return "Hello"
