@@ -1,21 +1,16 @@
-require 'pry'
-
 class Trip
 
         attr_reader :guest, :listing
-        @@all_trips = []
-        # @@all = []
+        @@all = []
     def initialize(guest, listing)
         @guest = guest
         @listing = listing
-        @@all_trips << self
+        @@all << self
     end
 
     def self.all
-        @@all_trips
-        # @@all
+        @@all
     end
-
 end
 
 
