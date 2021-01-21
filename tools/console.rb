@@ -6,10 +6,21 @@ def reload
 end
 
 
-jello = Dessert.new("Jello")
-pound_cake = Dessert.new("Pound Cake")
-dump_cake = Dessert.new("Dump Cake")
-chocolate_pudding = Dessert.new("Chocolate PuddingD")
+jello = Dessert.new("Jello", "Joshua's")
+# pound_cake = Dessert.new("Pound Cake")
+dump_cake = Dessert.new("Dump Cake", "Timothy's")
+# chocolate_pudding = Dessert.new("Chocolate Pudding")
+
+peaches = Ingredient.new("Peaches", "Dump Cake", "Timothy's", 80)
+# cocoa_powder = Ingredient.new("cocoa_powder", 120)
+# flour = Ingredient.new("flour", 80)
+# butter = Ingredient.new("butter", 120)
+# water = Ingredient.new("water", 1)
+
+timothys = Bakery.new("Timothy's", "Dump Cake")
+joshuas = Bakery.new("Joshua's", "Jello")
+leslies = Bakery.new("Leslie's", "Pound Cake")
+james = Bakery.new("James", "Chocolate Pudding")
 binding.pry
 
 return "Hello"
