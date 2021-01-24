@@ -15,7 +15,7 @@ class Guest
 
     def trips
     Trip.all.select {|trip| trip.guest == self}
-    binding.pry
+    # binding.pry
     end
 
     def trip_count

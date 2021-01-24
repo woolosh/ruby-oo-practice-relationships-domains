@@ -5,22 +5,22 @@ def reload
   load 'config/environment.rb'
 end
 
+# bake1 = Bakery.new("Timothy's")
+bake2 = Bakery.new("Joshua's")
+# bake3 = Bakery.new("Leslie's", "Pound Cake")
+# bake4 = Bakery.new("James", "Chocolate Pudding")
 
-jello = Dessert.new("Jello", "Joshua's")
-# pound_cake = Dessert.new("Pound Cake")
-dump_cake = Dessert.new("Dump Cake", "Timothy's")
-# chocolate_pudding = Dessert.new("Chocolate Pudding")
+# ing1 = Ingredient.new("Peaches", "Dump Cake", bake1, 80)
+# ing2 = Ingredient.new("cocoa_powder", 120)
+# ing3 = Ingredient.new("flour", 80)
+ingre4 = Ingredient.new("butter", 120)
+ingre5 = Ingredient.new("water", 1)
+ingre6 = Ingredient.new("sugar", 16)
 
-peaches = Ingredient.new("Peaches", "Dump Cake", "Timothy's", 80)
-# cocoa_powder = Ingredient.new("cocoa_powder", 120)
-# flour = Ingredient.new("flour", 80)
-# butter = Ingredient.new("butter", 120)
-# water = Ingredient.new("water", 1)
-
-timothys = Bakery.new("Timothy's", "Dump Cake")
-joshuas = Bakery.new("Joshua's", "Jello")
-leslies = Bakery.new("Leslie's", "Pound Cake")
-james = Bakery.new("James", "Chocolate Pudding")
+dessert1 = Dessert.new(bake2, ingre6)
+# dessert2 = Dessert.new("Pound Cake", "Leslie's")
+# dessert3 = Dessert.new("Dump Cake", "Timothy's")
+# dessert4 = Dessert.new("Chocolate Pudding", "James")
 binding.pry
 
 return "Hello"

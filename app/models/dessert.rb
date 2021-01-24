@@ -1,17 +1,13 @@
 class Dessert
 
-    attr_reader :name, :bakery
+    attr_accessor :ingredient
+    attr_reader :bakery
     @@all = []
-    def initialize(name, bakery)
-        @name = name
+    def initialize(bakery, ingredient)
         @bakery = bakery
+        @ingredient = ingredient
         @@all << self
     end
-
-    # def ingredients
-    #     Ingredient.all
-    # end
-
 
     def self.all
         @@all
