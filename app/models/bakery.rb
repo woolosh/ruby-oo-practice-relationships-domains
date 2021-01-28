@@ -1,6 +1,6 @@
 class Bakery
 
-    attr_reader :name, :desserts
+    attr_reader :name
     @@all = []
 
     def initialize(name)
@@ -10,7 +10,8 @@ class Bakery
 
     # return an array of ingredients for the bakery's desserts(done)
     def ingredients
-        # Dessert.all.select {|dessert| dessert.ingredient.name} # ".select" does not work. ".map" does.
+        # Dessert.all.select {|dessert| dessert.ingredient.name}
+        # ".select" does not work. ".map" does.
         Dessert.all.map {|dessert| dessert.ingredient.name}
     end
 

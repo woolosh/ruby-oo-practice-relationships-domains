@@ -9,6 +9,7 @@ class Listing
         @@all << self
     end
 
+#   - returns an array of all guests who have stayed at a listing
     def guests 
         results = []
         Trip.all.map do |trip|
